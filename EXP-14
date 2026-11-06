@@ -1,0 +1,25 @@
+Aim: To implement default and static methods in an interface.
+
+Algorithm:
+1. Create an interface.
+2. Define default and static methods.
+3. Implement the interface.
+4. Create an object.
+5. Call both methods.
+6. Display output.
+Program:
+interface A {
+    default void show() {
+        System.out.println("Default Method");
+    }
+    static void display() {
+        System.out.println("Static Method");
+    }
+}
+class B implements A {
+    public static void main(String[] args) {
+        B obj = new B();
+        obj.show();
+        A.display();
+    }
+}
